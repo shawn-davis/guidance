@@ -82,7 +82,7 @@ class NeMo(Remote):
                                       nemo_llm_api_key=api_key,
                                       nemo_llm_org_id=org_id,
                                       nemo_llm_api_host=api_host,
-                                      top_p=self.top_p, 
+                                      top_p=top_p, 
                                       temperature=temperature, 
                                       streaming=True,
                                       **kwargs)
@@ -91,7 +91,7 @@ class NeMo(Remote):
                                       nemo_llm_api_key=api_key,
                                       nemo_llm_org_id=org_id,
                                       nemo_llm_api_host=api_host,
-                                      top_p=self.top_p, 
+                                      top_p=top_p, 
                                       temperature=temperature, 
                                       streaming=True,
                                       **kwargs)
