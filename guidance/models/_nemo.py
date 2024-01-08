@@ -74,7 +74,7 @@ class NeMo(Remote):
             
             # convert to any found subclass
             self.__class__ = found_subclass
-            found_subclass.__init__(self, model,  echo=echo, caching=caching, api_key=api_key, temperature=temperature, max_streaming_tokens=max_streaming_tokens, **kwargs)
+            found_subclass.__init__(self, model,  echo=echo, caching=caching, api_key=api_key, org_id=org_id, api_host=api_host, top_p=top_p, temperature=temperature, max_streaming_tokens=max_streaming_tokens, **kwargs)
             return # we return since we just ran init above and don't need to run again
 
         if chat_model:
